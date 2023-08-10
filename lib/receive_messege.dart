@@ -16,7 +16,7 @@ void getMessege(BuildContext context) async {
     String token = '';
     bool isOnlyUnRead = false;
 
-    late WebSocketChannel channel = IOWebSocketChannel.connect(
+    WebSocketChannel channel = IOWebSocketChannel.connect(
       'wss://wsdev.yellow-time.de/app-notifications?Authorization=Bearer%20eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4MzIiLCJhdXRoIjp7ImF1dGhvcml0eSI6IkFQUF9ERUZBVUxUX1JPTEUifSwiZW1wSWQiOiI4MzIiLCJ1c2VyTmFtZSI6InRlc3RpbmcxQGdtYWlsLmNvbSIsImRldmljZUlkIjoiMTIzNDU2NyIsInRlbmFudElkIjoxLCJpYXQiOjE2OTE2NTA4NjksImV4cCI6MTY5MTczNzI2OX0.W0TaSLTGp4nxefgICR-KBZoZj-XCG7QbXGb0z4As2Po', //yellow time app token
     );
 
