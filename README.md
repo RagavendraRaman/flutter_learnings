@@ -1,4 +1,4 @@
-# dice_application
+# flutter_learning
 
 A new Flutter project.
 
