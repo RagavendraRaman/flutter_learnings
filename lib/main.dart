@@ -30,16 +30,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-  FlutterLocalNotificationsPlugin flutterLocalNotifications =
-      FlutterLocalNotificationsPlugin();
   String message = '';
 
   @override
   void initState() {
     super.initState();
     getMessege(context);
-    _initLocalNotifications();
+    // _initLocalNotifications();
     // _steamListner();
   }
 
@@ -47,16 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void dispose() {
     super.dispose();
   }
-
-  void _initLocalNotifications() {
-    const AndroidInitializationSettings androidSettings =
-        AndroidInitializationSettings('mipmap/ic_launcher');
-    final InitializationSettings initializationSettings =
-        InitializationSettings(android: androidSettings);
-    flutterLocalNotifications.initialize(initializationSettings);
-  }
-
-  
 
   @override
   Widget build(BuildContext context) {
